@@ -12,7 +12,7 @@ const BaseLayout = (props) => {
       <div className="MainFooter">
         <Container>
           <Row>
-            <Col md={2}>
+            {/* <Col md={2}>
               <p>Company</p>
             </Col>
             <Col md={2}>
@@ -20,8 +20,8 @@ const BaseLayout = (props) => {
             </Col>
             <Col md={2}>
               <p>Resources</p>
-            </Col>
-            <Col md={{ size: 3, offset: 3 }}>
+            </Col> */}
+            <Col md={{ size: 3, offset: 10 }}>
               <img
                 src="/logo.png" // Replace with your image path
                 alt="Image"

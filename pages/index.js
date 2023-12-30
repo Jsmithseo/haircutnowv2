@@ -11,7 +11,7 @@ import { Container, FormGroup, Label, Input } from 'reactstrap';
 
 import { Row, Col, Button } from 'reactstrap';
 import BaseLayout from './components/layouts/BaseLayouts.js';
-import Modal from "./components/Modal.js"
+// import Modal from "./components/Modal.js"
 
 export default function Index() {
   const MainStyle = {
@@ -51,7 +51,7 @@ export default function Index() {
                 placeholder="Enter your phone number"
               />
             </FormGroup> */}
-            <Modal/>
+            {/* <Modal/> */}
           </div>
         </center>
       </div>

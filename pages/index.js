@@ -87,8 +87,6 @@ export default function Index() {
         </center>
       </div>
 
-  
-
       <Container>
         <Row className="aboutSection">
           <Col xs="12" sm="12" md="6" lg="offset-4">

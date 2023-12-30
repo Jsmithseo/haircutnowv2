@@ -35,7 +35,7 @@ export default function Index() {
     
     <BaseLayout>
       <div className="video-background">
-        <video playsinline loop autoPlay muted className="video">
+        <video controls playsinline loop autoPlay muted className="video">
           <source src="/bannerVideo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>

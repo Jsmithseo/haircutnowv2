@@ -13,37 +13,6 @@ import { Row, Col, Button } from 'reactstrap';
 import BaseLayout from './components/layouts/BaseLayouts.js';
 import Modal from "./components/Modal.js"
 
-const items = [
-  {
-    src: '/testimonial1.png',
-    altText: 'Slide 1',
-    caption: '',
-    header: '',
-    key: '1',
-  },
-  {
-    src: '/testimonial2.png',
-    altText: 'Slide 2',
-    caption: '',
-    header: '',
-    key: '2',
-  },
-  {
-    src: '/testimonial3.png',
-    altText: 'Slide 3',
-    caption: '',
-    header: '',
-    key: '3',
-  },
-  {
-    src: '/testimonials4.png',
-    altText: 'Slide 4',
-    caption: '',
-    header: '',
-    key: '3',
-  },
-];
-
 export default function Index() {
   const MainStyle = {
     overflowX: 'hidden',

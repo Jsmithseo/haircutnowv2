@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import DeviceTab from './DeviceTab';
 
 const ctaModal = (props) => {
   const [modal, setModal] = useState(false);
@@ -10,9 +11,13 @@ const ctaModal = (props) => {
     <div>
       <Button color="danger" onClick={toggle}>Download App</Button>
       <Modal isOpen={modal} toggle={toggle}>
-        <ModalHeader toggle={toggle}>Modal Title</ModalHeader>
+        <ModalHeader toggle={toggle}>Scan QR Code with Phone</ModalHeader>
         <ModalBody>
-          Your modal content goes here.
+          
+          <center>
+          <DeviceTab/>
+          </center>
+     
         </ModalBody>
         <ModalFooter>
           <Button color="primary" onClick={toggle}>Do Something</Button>{' '}

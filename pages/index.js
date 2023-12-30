@@ -28,10 +28,14 @@ export default function Index() {
     fontSize: '30px',
     fontFamily: 'avenir',
   };
+
+  
   return (
+
+    
     <BaseLayout>
       <div className="video-background">
-        <video loop autoPlay muted className="video">
+        <video playsinline loop autoPlay muted className="video">
           <source src="/bannerVideo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>

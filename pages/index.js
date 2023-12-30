@@ -161,7 +161,6 @@ export default function Index() {
                 className="img-fluid lesson"
               />
             </div>
-
             <p>
               The app incorporates a secure and user-friendly payment system,
               designed to enhance the booking experience for clients. This

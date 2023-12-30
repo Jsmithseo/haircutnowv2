@@ -508,7 +508,10 @@ input#exampleEmail {
   background-color: #000;
 }
 
+li.nav-item {
+  list-style: none !important;
+}
 
-li.nav-item{
-list-style: none!important;
+button.navbar-toggler {
+  display: none;
 }

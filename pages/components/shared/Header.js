@@ -4,11 +4,10 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  Button,
   Collapse,
   NavbarToggler,
 } from 'reactstrap';
+
 
 const MyHeader = () => {
   const [isOpen, setIsOpen] = useState(false);

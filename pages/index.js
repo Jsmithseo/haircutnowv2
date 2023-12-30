@@ -87,11 +87,7 @@ export default function Index() {
         </center>
       </div>
 
-      {/* <div className="productBackdrop">
-        <Container>
-          <div className="jumbtron product"></div>
-        </Container>
-      </div> */}
+  
 
       <Container>
         <Row className="aboutSection">

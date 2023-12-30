@@ -1,0 +1,509 @@
+* {
+  font-family: avenir !important;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/ Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/ Montserrat-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/ Montserrat-Light.ttf');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/ Montserrat-Italic.ttf');
+  font-weight: italic;
+  font-style: normal;
+}
+
+html,
+body {
+  font-family: 'Montserrat', 'Helvetica';
+}
+
+//pages
+@import './shared/index';
+
+// Components
+@import './components/header';
+
+@import './portfolios';
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.clickable {
+  cursor: pointer;
+}
+.self-typed {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: #02cd08;
+  padding: 0.25em;
+}
+
+.base-page {
+  padding: 60px 0;
+  color: #000;
+  background-color: #ecedee;
+  min-height: 100vh;
+
+  .page-header-title {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.btn-primary {
+  background-color: #3d88cb;
+  color: #ffffff;
+  border-color: #3d88cb;
+  font-weight: 600;
+  &:hover {
+    background-color: #4376a4;
+  }
+}
+.absolute {
+  position: absolute;
+}
+
+.about-page .fadein {
+  opacity: 0;
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.about-page .title {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+  font-size: 42px;
+  font-weight: bold;
+}
+.about-page .subtitle {
+  -webkit-animation-delay: 2.2s;
+  -moz-animation-delay: 2.2s;
+  animation-delay: 2.2s;
+  font-size: 33px;
+}
+.about-page .subsubTitle {
+  -webkit-animation-delay: 3.6s;
+  -moz-animation-delay: 3.6s;
+  animation-delay: 3.6s;
+  font-size: 18px;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.brandname {
+  font-family: 'avenir';
+  font-weight: 800;
+}
+
+.brandContainer {
+  padding-top: 40px;
+}
+
+.port-navbar.transparent.is-open {
+  background-color: #2c3e50;
+}
+
+.port-navbar.transparent.is-close {
+  transition: 1s;
+}
+.crisis_callout {
+  align-items: center;
+}
+.last_call {
+  margin: 40px auto;
+  padding: 20px;
+}
+.hero {
+  h1 {
+    margin-top: 30px;
+  }
+}
+.vision {
+  margin: 60px auto;
+}
+.teams {
+  background-color: #8eb6dc;
+  padding: 2em 1em;
+  border-radius: 0.25em;
+  img {
+    max-width: 100%;
+  }
+  .teamRow {
+    margin: 40px auto;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    .imgCol {
+      order: 1;
+    }
+    .textCol {
+      order: 2;
+    }
+    .teamRow {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.callout {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.callouttext {
+  color: #02cd08;
+}
+
+.hero-welcome-wrapper {
+  padding-top: 3rem;
+}
+.power-text {
+  font-size: 14px;
+}
+
+.investorLink {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.linkStyles {
+  color: #0000ee;
+}
+
+@media only screen and (max-width: 768px) {
+  img.img-fluid.logo {
+    padding-top: 25%;
+  }
+
+  .container.about {
+    padding-top: 10px !important;
+  }
+  .aboutTitle {
+    display: none;
+  }
+
+  .aboutTitleMobile {
+    font-weight: 700;
+    font-size: 64px;
+    padding-top: 20px;
+  }
+
+  .hero-welcome-wrapper.d-flex.justify-content-end {
+    display: none !important;
+  }
+  .main-section {
+    padding-top: 50px;
+  }
+
+  .callout {
+    font-size: 4rem;
+  }
+
+  .stat {
+    font-size: 28px !important;
+  }
+  .lessonSection {
+    padding-top: 0px !important;
+  }
+  .aboutTitle {
+    padding-top: 20px !important;
+  }
+
+  .aboutSection {
+    padding-top: 10px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .statSection {
+    padding-bottom: 0px !important;
+  }
+
+  .desktopView {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobileView {
+    display: none;
+  }
+
+  .aboutTitleMobile {
+    display: none;
+  }
+}
+
+.jumbtron {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.jumbtron.product {
+  background-image: url('../../public/product.png') !important;
+}
+
+.jumbtron.putting {
+  background-image: url('../../public/bannerImage2.jpeg') !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+}
+
+.img-fluid.client {
+  height: auto;
+}
+
+.img-fluid.lesson {
+  margin-top: -100px !important;
+}
+
+.display-3 {
+  color: #bec6c8;
+  font-weight: 700;
+  font-family: avenir;
+  padding-top: 20px;
+}
+
+p {
+  font-family: avenir;
+  font-size: 20px;
+}
+
+.lessonSection {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.aboutSection {
+  padding-top: 50px;
+}
+
+.studentSection {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.statSection {
+  padding-bottom: 50px;
+}
+
+.aboutTitle {
+  font-weight: 700;
+  font-size: 64px;
+}
+
+.lessonTitle {
+  font-weight: 700;
+  font-size: 64px;
+}
+
+.studentTitle {
+  font-weight: 700;
+  font-size: 64px;
+}
+
+h3 {
+  font-family: avenir;
+}
+
+.ratings {
+  background-color: #000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.stat {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 700;
+  font-family: 'source-sans-pro', sans-serif;
+}
+
+.MainFooter {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contactTitle {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: avenir;
+}
+
+.contactInfo {
+  font-weight: 700;
+  font-family: avenir;
+}
+
+.img-fluid.headshot {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.display-3.about {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.container {
+  padding-top: 0px;
+}
+
+.img-fluid.logo {
+  padding-top: 10%;
+}
+
+.container.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.aboutlink {
+  padding-left: 5px;
+  color: #20629e;
+}
+
+.carousel {
+  background-color: slategrey;
+  height: 310px;
+}
+
+.carouselbackground {
+  background-color: slategrey;
+}
+
+.w-100 {
+  width: auto !important;
+}
+
+/* Set a maximum width for all images to prevent them from overflowing their containers */
+.w-100 {
+  max-width: 100%; /* Images won't exceed their container width */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+/* Use media queries to adjust image sizes for different screen sizes */
+@media screen and (max-width: 768px) {
+  .w-100 {
+    max-width: 90%; /* Reduce image size for screens up to 768px wide */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .w-100 {
+    max-width: 85%; /* Further reduce image size for screens up to 480px wide */
+  }
+}
+
+div#hbspt-form-9d50ba9c-a312-424e-b91f-a685171bccdc {
+  width: 50%;
+}
+
+div.hs-form-7df22d0b-533f-4956-b383-0425eec19c14_24d1b2a3-8278-4ee3-bde9-e75ec6afe9b8
+  .hs-button {
+  background: #6c757d !important;
+  border-color: #6c757d !important;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: arial, helvetica, sans-serif;
+}
+
+.navbar-expand-md .navbar-collapse {
+  flex-direction: column !important;
+}
+
+.bg-light {
+  background-color: #fff !important;
+}
+
+li.nav-item {
+  padding: 25px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 595px;
+  overflow: hidden;
+}
+
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 595px;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter: brightness(40%);
+}
+
+.bannerContent {
+  color: #fff;
+  padding-top: 15%;
+  position: relative;
+  z-index: 1; /* Ensure content is above the video */
+  /* Add additional styling for your content */
+}
+
+input#exampleEmail {
+  width: 400px;
+}
+
+.instagramFeed {
+  background-color: #000;
+}

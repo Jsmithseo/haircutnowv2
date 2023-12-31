@@ -12,7 +12,7 @@ const BaseLayout = (props) => {
       <div className="MainFooter">
         <Container>
           <Row>
-            <Col md={2}>
+            <Col md={4}>
             © 2024 HairCut Now, Inc.
               {/* <p>Company</p>
             </Col>
@@ -22,7 +22,7 @@ const BaseLayout = (props) => {
             <Col md={2}>
               <p>Resources</p> */}
             </Col>
-            <Col md={{ size: 3, offset: 10 }}>
+            <Col md={{ size: 1, offset: 7 }}>
               <img
                 src="/logo.png" // Replace with your image path
                 alt="Image"

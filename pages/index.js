@@ -203,7 +203,7 @@ export default function Index() {
           </Col>
         </Row>
       </Container>
-      <div className="instagramFeed">here</div>
+      {/* <div className="instagramFeed">here</div> */}
     </BaseLayout>
   );
 }

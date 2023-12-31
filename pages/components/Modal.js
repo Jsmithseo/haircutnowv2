@@ -13,20 +13,12 @@ const ctaModal = (props) => {
         Download App
       </Button>
       <Modal isOpen={modal} toggle={toggle}>
-        <ModalHeader toggle={toggle}>Scan QR Code with Phone</ModalHeader>
+        <ModalHeader toggle={toggle}>Scan QR Code</ModalHeader>
         <ModalBody>
           <center>
             <DeviceTab />
           </center>
         </ModalBody>
-        <ModalFooter>
-          <Button color="primary" onClick={toggle}>
-            Do Something
-          </Button>{' '}
-          <Button color="secondary" onClick={toggle}>
-            Cancel
-          </Button>
-        </ModalFooter>
       </Modal>
     </div>
   );

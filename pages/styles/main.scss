@@ -222,15 +222,6 @@ body {
   .container.about {
     padding-top: 10px !important;
   }
-  .aboutTitle {
-    display: none;
-  }
-
-  .aboutTitleMobile {
-    font-weight: 700;
-    font-size: 64px;
-    padding-top: 20px;
-  }
 
   .hero-welcome-wrapper.d-flex.justify-content-end {
     display: none !important;
@@ -514,4 +505,31 @@ li.nav-item {
 
 button.navbar-toggler {
   display: none;
+}
+
+::backdrop {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .desktop{
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width: 468px){
+ 
+  .aboutTitleMobile {
+    display: none;
+  }
 }

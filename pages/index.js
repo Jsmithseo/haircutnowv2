@@ -58,31 +58,62 @@ export default function Index() {
       </div>
 
       <Container>
+        <div className="desktop">
         <Row className="aboutSection">
-          <Col xs="12" sm="12" md="6" lg="offset-4">
-            <h2 className="aboutTitle">On-Demand Haircuts</h2>
-            <p>
-              Clients using our platform have the convenience of finding nearby
-              barbers who are available for immediate appointments or within the
-              next two hours. This feature effectively eliminates the
-              frustration of long waiting times often associated with
-              traditional barber visits. By integrating real-time availability
-              and location-based services, we ensure that clients can
-              effortlessly locate and book a barber at a moment's notice.
-            </p>
-          </Col>
-          <h2 className="aboutTitleMobile">On-Demand Haircuts</h2>
-          <Col xs="12" sm="12" md="6" lg="offset-4" xl="offset-4">
-            <img
-              src="/On-Demand.png" // Replace with your image path
-              alt="Image"
-              className="img-fluid client"
-            />
-          </Col>
+            <Col xs="12" sm="12" md="6" lg="offset-4">
+              
+              <h2 className="aboutTitle">On-Demand Haircuts</h2>
+              <p>
+                Clients using our platform have the convenience of finding
+                nearby barbers who are available for immediate appointments or
+                within the next two hours. This feature effectively eliminates
+                the frustration of long waiting times often associated with
+                traditional barber visits. By integrating real-time availability
+                and location-based services, we ensure that clients can
+                effortlessly locate and book a barber at a moment's notice.
+              </p>
+            </Col>
+            
+            <Col xs="12" sm="12" md="6" lg="offset-4" xl="offset-4">
+              <img
+                src="/On-Demand.png" // Replace with your image path
+                alt="Image"
+                className="img-fluid client"
+              />
+            </Col>
         </Row>
+        </div>
+
+        <div className="mobile">
+        <Row className="aboutSection">
+        <h2 className="aboutTitle">On-Demand Haircuts</h2>
+        <Col xs="12" sm="12" md="6" lg="offset-4" xl="offset-4">
+  
+
+              <img
+                src="/On-Demand.png" // Replace with your image path
+                alt="Image"
+                className="img-fluid client"
+              />
+            </Col>
+            <Col xs="12" sm="12" md="6" lg="offset-4">
+              <p>
+                Clients using our platform have the convenience of finding
+                nearby barbers who are available for immediate appointments or
+                within the next two hours. This feature effectively eliminates
+                the frustration of long waiting times often associated with
+                traditional barber visits. By integrating real-time availability
+                and location-based services, we ensure that clients can
+                effortlessly locate and book a barber at a moment's notice.
+              </p>
+            </Col>
+         
+        </Row>
+        </div>
         <br></br>
         <Row className="lessonSection">
           <Col xs="12" sm="12" md="6" lg="6">
+            
             <div className="desktopView">
               <img
                 src="/customize.png" // Replace with your image path
@@ -95,7 +126,7 @@ export default function Index() {
             <h2 className="lessonTitle">Customized Search</h2>
             <div className="mobileView">
               <img
-                src="/customize.png" // Replace with your image path
+                src="/customize.png"
                 alt="Image"
                 className="img-fluid lesson"
               />

@@ -59,9 +59,8 @@ export default function Index() {
 
       <Container>
         <div className="desktop">
-        <Row className="aboutSection">
+          <Row className="aboutSection">
             <Col xs="12" sm="12" md="6" lg="offset-4">
-              
               <h2 className="aboutTitle">On-Demand Haircuts</h2>
               <p>
                 Clients using our platform have the convenience of finding
@@ -73,7 +72,7 @@ export default function Index() {
                 effortlessly locate and book a barber at a moment's notice.
               </p>
             </Col>
-            
+
             <Col xs="12" sm="12" md="6" lg="offset-4" xl="offset-4">
               <img
                 src="/On-Demand.png" // Replace with your image path
@@ -81,15 +80,13 @@ export default function Index() {
                 className="img-fluid client"
               />
             </Col>
-        </Row>
+          </Row>
         </div>
 
         <div className="mobile">
-        <Row className="aboutSection">
-        <h2 className="aboutTitle">On-Demand Haircuts</h2>
-        <Col xs="12" sm="12" md="6" lg="offset-4" xl="offset-4">
-  
-
+          <Row className="aboutSection">
+            <h2 className="aboutTitle">On-Demand Haircuts</h2>
+            <Col xs="12" sm="12" md="6" lg="offset-4" xl="offset-4">
               <img
                 src="/On-Demand.png" // Replace with your image path
                 alt="Image"
@@ -107,13 +104,11 @@ export default function Index() {
                 effortlessly locate and book a barber at a moment's notice.
               </p>
             </Col>
-         
-        </Row>
+          </Row>
         </div>
         <br></br>
         <Row className="lessonSection">
           <Col xs="12" sm="12" md="6" lg="6">
-            
             <div className="desktopView">
               <img
                 src="/customize.png" // Replace with your image path

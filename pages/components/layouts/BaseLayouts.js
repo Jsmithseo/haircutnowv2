@@ -1,11 +1,22 @@
 import Header from '../shared/Header';
 import { Container, Row, Col } from 'reactstrap';
+import Script from 'next/script'
 
 const BaseLayout = (props) => {
   const { className, user, loading, children } = props;
   return (
     <div className="layout-container">
       <Header user={user} loading={loading} />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-YBR0G33450" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-YBR0G33450');
+        `}
+      </Script>
       <main className={`cover ${className}`}>
         <div className="wrapper">{children}</div>
       </main>
@@ -13,7 +24,7 @@ const BaseLayout = (props) => {
         <Container>
           <Row>
             <Col md={4}>
-            © 2024 HairCut Now, Inc.
+              © 2024 HairCut Now, Inc.
               {/* <p>Company</p>
             </Col>
             <Col md={2}>

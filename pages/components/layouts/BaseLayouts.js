@@ -1,6 +1,7 @@
 import Header from '../shared/Header';
 import { Container, Row, Col } from 'reactstrap';
-import Script from 'next/script'
+import Script from 'next/script';
+import '../../styles/Home.module.css';
 
 const BaseLayout = (props) => {
   const { className, user, loading, children } = props;

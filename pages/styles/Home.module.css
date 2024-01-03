@@ -129,3 +129,23 @@
     flex-direction: column;
   }
 }
+
+.Mobile {
+  display: none; /* Hide on mobile */
+}
+
+@media (min-width: 768px) {
+  .Mobile {
+    display: block; /* Show on desktop */
+  }
+}
+
+.Desktop {
+  display: block; /* Show on desktop */
+}
+
+@media (max-width: 767px) {
+  .Desktop {
+    display: none; /* Hide on mobile */
+  }
+}

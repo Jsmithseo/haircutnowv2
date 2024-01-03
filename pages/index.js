@@ -1,17 +1,13 @@
 import React from 'react';
-import Image from 'next/image';
 
-import { jsx } from '@emotion/react';
-import styled from '@emotion/styled';
-import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
 // import MaterialContactform from './components/MaterialContactform';
-import Link from 'next/link';
 import { Container, FormGroup, Label, Input } from 'reactstrap';
 
 import { Row, Col, Button } from 'reactstrap';
 import BaseLayout from './components/layouts/BaseLayouts.js';
 import Modal from './components/Modal.js';
+import ModalTwo from './components/ModalTwo.js';
+import './styles/Home.module.css';
 
 export default function Index() {
   const MainStyle = {
@@ -32,7 +28,7 @@ export default function Index() {
   return (
     <BaseLayout>
       <div className="video-background">
-        <video controls playsinline loop autoPlay muted className="video">
+        <video controls loop autoPlay muted className="video">
           <source src="/bannerVideo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -51,8 +47,14 @@ export default function Index() {
                 id="exampleEmail"
                 placeholder="Enter your phone number"
               />
+            
             </FormGroup> */}
-            <Modal />
+            <div className="DesktopTwo">
+              <Modal />
+            </div>
+            <div className="MobileTwo">
+              <ModalTwo />
+            </div>
           </div>
         </center>
       </div>
